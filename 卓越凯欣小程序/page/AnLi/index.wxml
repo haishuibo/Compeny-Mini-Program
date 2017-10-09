@@ -1,0 +1,27 @@
+<!--轮播-->
+<view class="ele-container">
+<view class="lunbo">
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item.images}}" class="slide-image" width="100%" />
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+</view>
+
+<!--案例详情-->
+<view class="ele-container">
+<view class="moban">
+<block wx:for="{{moban}}">
+<view class="moban_img">
+ <navigator url="/page/Moban/index?id={{item.id}}">
+<text>{{item.name}}</text>
+<image src="{{item.images}}" mode="widthFix"></image>
+</navigator>
+</view>
+</block>
+</view>
+</view>

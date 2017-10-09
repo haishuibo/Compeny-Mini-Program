@@ -1,0 +1,14 @@
+/* index.wxss */
+.xiangqin{
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 20px;
+  border-top: 4px solid #e5e4e4;
+}
+.xiangqin .xiangqin_title{
+  margin-top: 20px;
+}
+.goumai{
+   padding-left: 20px;
+   padding-right: 20px;
+}

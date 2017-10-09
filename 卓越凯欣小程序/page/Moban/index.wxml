@@ -1,0 +1,29 @@
+<!--轮播-->
+<view class="ele-container">
+<view class="lunbo">
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{mobaninfo}}">
+    <swiper-item>
+      <image src="{{item.image}}" class="slide-image" mode="widthFix" width="100%" />
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+</view>
+
+<!--模版详情页-->
+<view class="ele-container">
+<view class="xiangqin">
+<view class="xiangqin_title">
+<text>{{xiangqingtitle}}</text>
+</view>
+<view class="market_price">
+<text>原价：{{market_price}}</text>
+</view>
+<view class="sell_price">
+<text>折扣价：{{sell_price}}</text>
+</view>
+</view>
+</view>
+

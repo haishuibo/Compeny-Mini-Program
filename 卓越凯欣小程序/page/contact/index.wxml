@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="classname">淮安卓越凯欣科技有限公司</view>
+<view class="classname">联系电话：0517-83999928</view>
+<view>地址：江苏省淮安市海口路9号（留学生创业园）</view>
+<view class="classname">
+<map id="map" longitude="119.089797" latitude="33.583871" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
+</view>

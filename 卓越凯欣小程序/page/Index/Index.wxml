@@ -1,0 +1,75 @@
+<!--轮播-->
+<view class="ele-container">
+<view class="lunbo">
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item.images}}" class="slide-image" width="100%" />
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+</view>
+
+<!--产品-->
+<view class="ele-container">
+<view class="chanpin">
+<block wx:for="{{webtype}}">
+<view class="chanpin_img">
+<image src="{{item.images}}" class="chanpin_url" />
+<text>{{item.name}}</text>
+</view>
+</block>
+</view>
+</view>
+
+<!--合作流程标题-->
+<template name="title">
+<view class="title">
+<view class="title_images">
+<image src="{{images}}"></image>
+</view>
+<text>{{heuzoliu}}</text>
+</view>
+</template>
+
+<view class="ele-container">
+<template is="title" data="{{...hezuotitle}}"></template>
+</view>
+
+<!--合作内容-->
+<view class="ele-container">
+<view class="hezuo">
+<block wx:for="{{hezuocontent}}">
+<view class="hezuoimg">
+<image src="{{item.images}}"></image>
+<text>{{item.name}}</text>
+</view>
+</block>
+<view class="liuchengdown">
+<image src="/image/liucheng.jpg" mode="widthFix"></image>
+</view>
+</view>
+</view>
+
+<!--案例标题-->
+<view class="ele-container">
+<template is="title" data="{{...anlititle}}"></template>
+</view>
+
+<!--案例内容-->
+<view class="ele-container">
+<view class="anli">
+<block wx:for="{{anli}}">
+<view class="anli_img">
+ <navigator url="/page/EerjiAnli/index?id={{item.id}}">
+<text>{{item.name}}</text>
+<image src="{{item.images}}" mode="widthFix" />
+</navigator>
+</view>
+</block>
+</view>
+</view>
+
+

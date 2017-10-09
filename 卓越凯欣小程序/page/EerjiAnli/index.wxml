@@ -1,0 +1,28 @@
+<!--轮播-->
+<view class="ele-container">
+<view class="lunbo">
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item.images}}" class="slide-image" mode="widthFix" width="100%" />
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+</view>
+
+<!--详情页-->
+<view class="ele-container">
+<view class="xiangqin">
+<view class="xiangqin_title">
+<text>{{xiangqingtitle}}</text>
+</view>
+<block wx:for="{{anliinfo}}">
+<view class="content">
+<image src="{{item.image}}" mode="widthFix"></image>
+</view>
+</block>
+</view>
+</view>
+
